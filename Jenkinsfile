@@ -8,6 +8,12 @@ pipeline {
             }
         }
         
+        stage('QA') {
+            steps {
+                echo 'Application Deployed in QA Environment'
+            }
+        }
+        
         stage('Stage') {
             steps {
                 echo 'Application Deployed in Stage Environment'
